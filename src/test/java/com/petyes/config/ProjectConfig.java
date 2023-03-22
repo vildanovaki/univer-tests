@@ -18,6 +18,4 @@ public interface ProjectConfig extends Config {
     String browserSize();
 //    @DefaultValue("http://localhost:4444/wd/hub")
     String remoteDriverUrl();
-    @DefaultValue("http://localhost:8080/video")
-    String videoStorage();
 }
