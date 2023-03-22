@@ -1,0 +1,167 @@
+plugins {
+    id 'java-library'
+    id 'io.qameta.allure' version '2.8.1'
+    id "io.freefair.lombok" version "6.0.0-m2"
+}
+
+repositories {
+    mavenCentral()
+}
+
+def allureVersion = "2.17.3",
+    selenideVersion = "5.24.0",
+    junitVersion = '5.9.2'
+
+allure {
+    version = allureVersion
+    autoconfigure = true
+    aspectjweaver = true
+    configuration = "testImplementation"
+    useJUnit5 {
+        version = allureVersion
+    }
+}
+
+dependencies {
+    testImplementation(
+            'org.aspectj:aspectjweaver:1.9.19',
+            "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "com.github.javafaker:javafaker:1.0.2",
+            "io.rest-assured:rest-assured:4.3.1",
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "org.aeonbits.owner:owner:1.0.12",
+            "org.assertj:assertj-core:3.19.0",
+            "org.slf4j:slf4j-simple:1.7.29",
+            "org.junit.jupiter:junit-jupiter:$junitVersion")
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = 11
+    targetCompatibility = 11
+}
+
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+
+    if (System.getProperty("threads") != null) {
+        systemProperties += [
+                'junit.jupiter.execution.parallel.enabled'                 : true,
+                'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
+                'junit.jupiter.execution.parallel.mode.classes.default'    : 'concurrent',
+                'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
+                'junit.jupiter.execution.parallel.config.fixed.parallelism': System.getProperty("threads").toInteger()
+        ]
+    }
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
+task auctionTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'auctionTests'
+    }
+}
+
+task blogTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'blogTests'
+    }
+}
+
+task authorization(type: Test) {
+    useJUnitPlatform {
+        includeTags 'authorization'
+    }
+}
+
+task breeders(type: Test) {
+    useJUnitPlatform {
+        includeTags 'breeders'
+    }
+}
+
+task breederProfileTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'breederProfileTests'
+    }
+}
+
+task chatTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'chatTests'
+    }
+}
+
+task customerProfileTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'customerProfileTests'
+    }
+}
+
+task faqsTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'faqsTests'
+    }
+}
+
+task knowledgeTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'knowledgeTests'
+    }
+}
+
+task myPetsTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'myPetsTests'
+    }
+}
+
+task petTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'petTests'
+    }
+}
+
+task reviewTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'reviewTests'
+    }
+}
+
+task requestTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'requestTests'
+    }
+}
+
+task saleListTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'saleListTests'
+    }
+}
+
+task salePetTests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'salePetTests'
+    }
+}
+
+task smoke(type: Test) {
+    useJUnitPlatform {
+        includeTags 'smoke'
+    }
+}
+
+task regression(type: Test) {
+    useJUnitPlatform {
+        includeTags 'regression'
+    }
+}
