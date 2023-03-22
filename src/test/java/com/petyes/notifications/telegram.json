@@ -1,0 +1,16 @@
+{
+  "base": {
+    "project": "${JOB_BASE_NAME}",
+    "environment": "Telegram",
+    "comment": "tests for univer",
+    "reportLink": "${BUILD_URL}",
+    "language": "en",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5784683675:AAHDqLz7S_-vw1-u2israbxW4z5u_U2T0SI",
+    "chat": "-1001736482850",
+    "replyTo": ""
+  }
+}
