@@ -17,13 +17,13 @@ import java.net.URL;
 
 @Feature("LogIn")
 public class LoginTests extends TestBase {
-
-    @BeforeEach
-    void setup() throws MalformedURLException {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        WebDriver driver = new RemoteWebDriver(new URL("https://user1:1234@selenoid.autotests.cloud/wd/hub/"), chromeOptions);
-        driver.manage().deleteAllCookies();
-    }
+//
+//    @BeforeEach
+//    void setup() throws MalformedURLException {
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        WebDriver driver = new RemoteWebDriver(new URL("https://user1:1234@selenoid.autotests.cloud/wd/hub/"), chromeOptions);
+//        driver.manage().deleteAllCookies();
+//    }
 
     @Test
     @Tag("authorization")
