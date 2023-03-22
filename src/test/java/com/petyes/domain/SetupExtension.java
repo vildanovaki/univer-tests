@@ -18,8 +18,8 @@ public class SetupExtension extends BaseSetupExtension {
         DriverSettings.configure();
         Configuration.startMaximized = true;
         Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = App.config.webUrl();
-        RestAssured.baseURI = App.config.apiUrl();
+        Configuration.baseUrl = "https://pet-yes.com";
+        RestAssured.baseURI = "https://pet-yes.com";
 //        DataBuilder dataBuilder = new DataBuilder();
 //        dataBuilder.setBreederToken();
 //        dataBuilder.setBreederId();
