@@ -22,8 +22,7 @@ public class AuctionListTests extends TestBase {
 
     @Test
     @DisplayName("Просмотреть не пустую страницу аукциона")
-    @Tag("regress")
-    @Tag("auctionTests")
+    @Tag("auction_tests")
     void viewAuctionTest() {
         BasePage basePage = new BasePage();
         Login login = new Login();

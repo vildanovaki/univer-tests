@@ -26,8 +26,7 @@ public class BlogTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Проверка доступности публикации статьи: {0}")
-    @Tag("regress")
-    @Tag("blogTests")
+    @Tag("blog_tests")
     void createArticleTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();
@@ -44,7 +43,7 @@ public class BlogTests extends TestBase {
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Работа фильтров: {0}")
     @Tag("regress")
-    @Tag("blogTests")
+    @Tag("blog_tests")
     void filterArticlesTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();

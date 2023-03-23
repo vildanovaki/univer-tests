@@ -26,8 +26,7 @@ public class PetTests extends TestBase {
     }
 
 //    @Test
-//    @AllureId("5704")
-//    @Tag("petTests")
+//@Tag("pets_tests")
 //    @DisplayName("Создание питомца с породой")
 //    void addPetWithBreedTest() {
 //        BasePage basePage = new BasePage();
@@ -249,7 +248,7 @@ public class PetTests extends TestBase {
 //    }
 
     @Test
-    @Tag("petTests")
+    @Tag("pets_tests")
     @DisplayName("Создание питомца без породы")
     void addPetWithoutBreedTest() {
         BasePage basePage = new BasePage();
@@ -296,7 +295,7 @@ public class PetTests extends TestBase {
     }
 
     @Test
-    @Tag("petTests")
+    @Tag("pets_tests")
     @DisplayName("Редактирование питомца (кличка)")
     void editPetTest() {
         BasePage basePage = new BasePage();
@@ -324,7 +323,7 @@ public class PetTests extends TestBase {
     }
 
     @Test
-    @Tag("petTests")
+    @Tag("pets_tests")
     @DisplayName("Удалить питомца")
     void deletePetTest() {
         BasePage basePage = new BasePage();

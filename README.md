@@ -9,25 +9,14 @@
 ___
 
 ## :pushpin: В качестве CI системы использован Jenkins
-### [Проект PetYes](https://jenkins.autotests.cloud/job/08-levikss-PetYes/)
 
 ![alt "Jenkins"](./images/Jenkins.png "Jenkins")
 
 ## :arrow_forward: Запуск тестов
 
-При запуске тестов можно выбрать окружение, на котором они будут прогоняться. Для этого должен быть файл {env}.properties со следующим содержанием:
-```bash
-webUrl ={webUrl}
-breederPhoneNumber ={phone}
-customerPhoneNumber ={phone}
-adminPhoneNumber ={phone}
-userPassword ={password}
-adminPassword ={password}
-specialization ={id}
-breed ={id}
 ```
 
-Если файл local.properties заполнен, то для запуска тестов необходимо выполнить следующую команду:
+Для запуска тестов необходимо выполнить следующую команду:
 
 ```bash
 gradle clean test
@@ -37,21 +26,14 @@ gradle clean test
 
 ```bash
 gradle clean test 
--Dbrowser=${BROWSER} 
--DbrowserVersion=${BROWSER_VERSION} 
--DbrowserSize=${BROWSER_SIZE} 
--DbrowserMobileView="${BROWSER_MOBILE}" 
--DremoteDriverUrl=https://user1:1234@${REMOTE_DRIVER_URL}/wd/hub/ 
--DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
--Dthreads=${THREADS}
+-Dbrowser=${BROWSER}
+-Dversion=${VERSION}
+-Dsize=${SIZE}
+
 ```
 - в параметре Dbrowser - указываем браузер, в котором будут выполняться тесты
-- в параметре DbrowserVersion - указываем версию браузера
-- в параметре DbrowserSize - указываем размер окна браузера
-- в параметре DbrowserMobileView - указываем мобильное устройство, на котором будут выполняться тесты
-- в параметре DremoteDriverUrl - указываем логин, пароль и адрес удаленного сервера, где будут проходить тесты 
-- в параметре DvideoStorage указываем место для сохранения видео
-- в параметре Dthreads задаем количетство потоков
+- в параметре Dversion - указываем версию браузера
+- в параметре Dsize - указываем размер окна браузера
 
 ## :bar_chart: Генерация отчета происходит в Allure Report
 

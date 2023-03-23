@@ -26,7 +26,7 @@ public class KnowledgeTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Подобрать породу: {0}")
-    @Tag("knowledgeTests")
+    @Tag("knowledge_tests")
     void chooseABreedTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();
@@ -68,7 +68,7 @@ public class KnowledgeTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Сравнить породы: {0}")
-    @Tag("knowledgeTests")
+    @Tag("knowledge_tests")
     void compareBreedsTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();
@@ -96,7 +96,7 @@ public class KnowledgeTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Работа фильтров: {0}")
-    @Tag("knowledgeTests")
+    @Tag("knowledge_tests")
     void filterBreedsTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();
@@ -123,7 +123,7 @@ public class KnowledgeTests extends TestBase {
     }
 
     @Test
-    @Tag("knowledgeTests")
+    @Tag("knowledge_tests")
     @DisplayName("Переход в создание запроса из раздела Каталог пород")
     void createRequestTest() {
         BasePage basePage = new BasePage();
@@ -143,7 +143,7 @@ public class KnowledgeTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Просмотр породы: {0}")
-    @Tag("knowledgeTests")
+    @Tag("knowledge_tests")
     void viewBreedTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();

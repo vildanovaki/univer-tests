@@ -64,93 +64,76 @@ tasks.withType(Test) {
     }
 }
 
-task auctionTests(type: Test) {
+task auction_Tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'auctionTests'
+        includeTags 'auction_Tests'
     }
 }
 
-task blogTests(type: Test) {
+task blog_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'blogTests'
+        includeTags 'blog_tests'
     }
 }
 
-task authorization(type: Test) {
+task authorization_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'authorization'
+        includeTags 'authorization_tests'
     }
 }
 
-task breeders(type: Test) {
+task breeder_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'breeders'
+        includeTags 'breeder_tests'
     }
 }
 
-task breederProfileTests(type: Test) {
+
+task chat_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'breederProfileTests'
+        includeTags 'chat_tests'
     }
 }
 
-task chatTests(type: Test) {
+task customer_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'chatTests'
+        includeTags 'customer_tests'
     }
 }
 
-task customerProfileTests(type: Test) {
+task faqs_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'customerProfileTests'
+        includeTags 'faqs_tests'
     }
 }
 
-task faqsTests(type: Test) {
+task knowledge_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'faqsTests'
+        includeTags 'knowledge_tests'
     }
 }
 
-task knowledgeTests(type: Test) {
+task pets_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'knowledgeTests'
+        includeTags 'pets_tests'
     }
 }
 
-task myPetsTests(type: Test) {
+task review_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'myPetsTests'
+        includeTags 'review_tests'
     }
 }
 
-task petTests(type: Test) {
+task request_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'petTests'
+        includeTags 'request_tests'
     }
 }
 
-task reviewTests(type: Test) {
+task sale_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'reviewTests'
-    }
-}
-
-task requestTests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'requestTests'
-    }
-}
-
-task saleListTests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'saleListTests'
-    }
-}
-
-task salePetTests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'salePetTests'
+        includeTags 'sale_tests'
     }
 }
 

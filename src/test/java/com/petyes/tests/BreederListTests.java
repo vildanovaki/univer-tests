@@ -27,8 +27,7 @@ public class BreederListTests extends TestBase {
     }
 
     @Test
-    @Tag("regress")
-    @Tag("breeders")
+    @Tag("breeder_tests")
     @DisplayName("Переход в создание запроса из раздела Заводчики")
     void createRequestTest() {
         BasePage basePage = new BasePage();
@@ -44,8 +43,7 @@ public class BreederListTests extends TestBase {
     }
 
     @Test
-    @Tag("regress")
-    @Tag("breeders")
+    @Tag("breeder_tests")
     @DisplayName("Открытие страницы заводчика")
     void openBreederTest() {
         Login login = new Login();
@@ -65,8 +63,7 @@ public class BreederListTests extends TestBase {
     }
 
     @Test
-    @Tag("regress")
-    @Tag("breeders")
+    @Tag("breeder_tests")
     @DisplayName("Оставить отзыв о зоводчике")
     void breederReviewTest() {
         BasePage basePage = new BasePage();
@@ -90,8 +87,7 @@ public class BreederListTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Работа фильтров на странице Заводчики: {0}")
-    @Tag("regress")
-    @Tag("breeders")
+    @Tag("breeder_tests")
     void filterBreedersTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();

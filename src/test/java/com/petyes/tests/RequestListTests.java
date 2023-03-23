@@ -23,7 +23,7 @@ public class RequestListTests extends TestBase {
     }
 
     @Test
-    @Tag("requestTests")
+    @Tag("request_tests")
     @DisplayName("Работа фильтров")
     void filterRequestsTest() {
 
@@ -50,7 +50,7 @@ public class RequestListTests extends TestBase {
     }
 
     @Test
-    @Tag("requestTests")
+    @Tag("request_tests")
     @DisplayName("Просмотр запроса")
     void viewRequestTest() {
         BasePage basePage = new BasePage();
@@ -65,7 +65,7 @@ public class RequestListTests extends TestBase {
     }
 
     @Test
-    @Tag("requestTests")
+    @Tag("request_tests")
     @DisplayName("Отклик на запрос")
     void requestApplicationTest() {
         BasePage basePage = new BasePage();

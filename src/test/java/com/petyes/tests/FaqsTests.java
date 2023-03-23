@@ -23,7 +23,7 @@ public class FaqsTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Оформить подписку в разделе Вопросы: {0}")
-    @Tag("faqsTests")
+    @Tag("faqs_tests")
     void viewBreedTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();

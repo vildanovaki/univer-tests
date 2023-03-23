@@ -1,12 +1,14 @@
 package com.petyes.tests;
 
 import com.petyes.api.Login;
-import com.petyes.api.Pet;
 import com.petyes.domain.DataBuilder;
 import com.petyes.pages.BasePage;
 import com.petyes.pages.MyPetsPage;
 import io.qameta.allure.Feature;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
 @Feature("My pets")
 public class MyPetsTests extends TestBase {
@@ -21,7 +23,7 @@ public class MyPetsTests extends TestBase {
     }
 
     @Test
-    @Tag("myPetsTests")
+    @Tag("pets_tests")
     @DisplayName("Открыть страницу питомца")
     void openPetTest() {
         BasePage basePage = new BasePage();
@@ -40,7 +42,7 @@ public class MyPetsTests extends TestBase {
     }
 
     @Test
-    @Tag("myPetsTests")
+    @Tag("pets_tests")
     @DisplayName("Открыть родословную питомца")
     void openGenTreeTest() {
         BasePage basePage = new BasePage();
@@ -58,7 +60,7 @@ public class MyPetsTests extends TestBase {
     }
 
     @Test
-    @Tag("myPetsTests")
+    @Tag("pets_tests")
     @DisplayName("Открыть редактирование питомца")
     void openEditPetTest() {
         BasePage basePage = new BasePage();
@@ -77,7 +79,7 @@ public class MyPetsTests extends TestBase {
     }
 
     @Test
-    @Tag("myPetsTests")
+    @Tag("pets_tests")
     @DisplayName("Открыть продажу питомца (отдать даром)")
     void openFreeSalePetTest() {
         BasePage basePage = new BasePage();
@@ -97,7 +99,7 @@ public class MyPetsTests extends TestBase {
     // Дефект - не удается открыть продажу питомца, так как сломан запрос на создание питомца для продажи
     // (ошибка не добавления спецификации)
     @Test
-    @Tag("myPetsTests")
+    @Tag("pets_tests")
     @DisplayName("Открыть продажу питомца")
     void openSalePetTest() {
         BasePage basePage = new BasePage();

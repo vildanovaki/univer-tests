@@ -27,7 +27,7 @@ public class BreederProfileTests extends TestBase {
     }
 
     @Test
-    @Tag("breederProfileTests")
+    @Tag("breeder_tests")
     @DisplayName("Просмотр продавцом своего профиля")
     void viewBreederProfileTest() {
         BasePage basePage = new BasePage();
@@ -42,7 +42,7 @@ public class BreederProfileTests extends TestBase {
     }
 
     @Test
-    @Tag("breederProfileTests")
+    @Tag("breeder_tests")
     @DisplayName("Редактирование продавцом своего профиля (о себе)")
     void editProfileTest() {
         Faker faker = new Faker();
@@ -66,7 +66,7 @@ public class BreederProfileTests extends TestBase {
 
     // Тест падает, так как дефект на добавление питомца на продажу - дефект на сайте
     @Test
-    @Tag("breederProfileTests")
+    @Tag("breeder_tests")
     @DisplayName("Просмотр продавцом объявлений в своем профиле")
     void viewSaleTest() {
         BasePage basePage = new BasePage();
@@ -84,7 +84,7 @@ public class BreederProfileTests extends TestBase {
 
     // Тест падает, так как не работает создание аукциона - дефект на сайте
     @Test
-    @Tag("breederProfileTests")
+    @Tag("breeder_tests")
     @DisplayName("Просмотр продавцом аукционов в своем профиле")
     void viewAuctionTest() {
         BasePage basePage = new BasePage();

@@ -25,7 +25,7 @@ public class SalePetTests extends TestBase {
     }
 
     @Test
-    @Tag("salePetTests")
+    @Tag("sale_tests")
     @DisplayName("Проверить неактивный радиобатон - Продать сейчас")
     void saleExistingPetTest() {
         Pet pet = new Pet();
@@ -47,7 +47,7 @@ public class SalePetTests extends TestBase {
     }
 
     @Test
-    @Tag("salePetTests")
+    @Tag("sale_tests")
     @DisplayName("Отдать даром нового питомца без породы")
     void freeSaleExistingPetTest() {
 
@@ -84,7 +84,7 @@ public class SalePetTests extends TestBase {
     }
 
     @Test
-    @Tag("salePetTests")
+    @Tag("sale_tests")
     @DisplayName("Редактирование объявление (комментарий)")
     void editPetSaleTest() {
         BasePage basePage = new BasePage();
@@ -124,7 +124,7 @@ public class SalePetTests extends TestBase {
     }
 
     @Test
-    @Tag("salePetTests")
+    @Tag("sale_tests")
     @DisplayName("Снятие объявления с продажи")
     void cancelPetSaleTest() {
         BasePage basePage = new BasePage();

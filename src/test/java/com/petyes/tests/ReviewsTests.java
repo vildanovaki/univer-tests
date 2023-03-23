@@ -23,7 +23,7 @@ public class ReviewsTests extends TestBase {
 
     @EnumSource(ItemsForLogin.class)
     @ParameterizedTest(name = "Оставить отзыв: {0}")
-    @Tag("reviewTests")
+    @Tag("review_tests")
     void compareBreedsTest(ItemsForLogin items) {
         BasePage basePage = new BasePage();
         Login login = new Login();

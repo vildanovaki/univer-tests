@@ -23,7 +23,7 @@ public class CustomerProfileTests extends TestBase {
     }
 
     @Test
-    @Tag("customerProfileTests")
+    @Tag("customer_tests")
     @DisplayName("Просмотр покупателем своего профиля")
     void viewCustomerProfileTest() {
         BasePage basePage = new BasePage();
@@ -38,7 +38,7 @@ public class CustomerProfileTests extends TestBase {
     }
 
     @Test
-    @Tag("customerProfileTests")
+    @Tag("customer_tests")
     @DisplayName("Редактирование покупателем своего профиля (о себе)")
     void editProfileTest() {
         Faker faker = new Faker();
@@ -61,7 +61,7 @@ public class CustomerProfileTests extends TestBase {
     }
 
     @Test
-    @Tag("customerProfileTests")
+    @Tag("customer_tests")
     @DisplayName("Создание покупателем запроса на покупку")
     void viewRequestTest() {
         BasePage basePage = new BasePage();

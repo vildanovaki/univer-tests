@@ -27,7 +27,7 @@ public class ChatTests extends TestBase {
     }
 
     @Test
-    @Tag("chatTests")
+    @Tag("chat_tests")
     @DisplayName("Отправка и получение сообщения")
     void messageExchangeTest() {
         BasePage basePage = new BasePage();
