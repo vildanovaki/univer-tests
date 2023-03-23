@@ -18,7 +18,6 @@ ___
 
 Для запуска тестов необходимо выполнить следующую команду:
 
-```bash
 gradle clean test
 ```
 
@@ -57,7 +56,7 @@ allure serve build/allure-results
 
 ![alt "Allure TestOps"](./images/Allure_TO.png "Allure TestOps")
 
-## :pushpin: Проект интегрирован с [Jira](https://jira.autotests.cloud/browse/AUTO-488)
+## :pushpin: Проект интегрирован с Jira
 
 ![alt "Jira"](./images/Jira.png "Jira")
 
